@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+        <welcome-file-list>
+            <welcome-file>index.jsp</welcome-file>
+        </welcome-file-list>
+        <servlet>
+            <servlet-name>KhuTroServlet</servlet-name>
+            <servlet-class>controller.KhuTroServlet</servlet-class>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>KhuTroServlet</servlet-name>
+            <url-pattern>/khutro</url-pattern>
+        </servlet-mapping>
+        <servlet>
+            <servlet-name>PhongTroServlet</servlet-name>
+            <servlet-class>controller.PhongTroServlet</servlet-class>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>PhongTroServlet</servlet-name>
+            <url-pattern>/phongtro</url-pattern>
+        </servlet-mapping>
+</web-app>
